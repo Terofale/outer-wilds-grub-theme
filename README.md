@@ -1,6 +1,7 @@
 ## Outer Wilds GRUB theme
 
 Supported languages: Chinese (simplified), Chinese (traditional), English, French, German, Hungarian, Italian, Korean, Latvian, Norwegian, Polish, Portuguese, Russian, Rusyn, Spanish, Turkish, Ukrainian
+
 Translations are generated using google translate, if you see a problem, feel free to open an issue.
 
 ![outergrub](https://github.com/user-attachments/assets/d8c49b1a-3624-4d32-a99f-fbec0e3502b9)
