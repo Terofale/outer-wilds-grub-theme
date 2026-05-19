@@ -1,0 +1,114 @@
+# Global properties
+title-text: ""
+desktop-image: "outer-wilds.png"
+desktop-color: "#000000"
+terminal-font: "Space Mono Regular 32"
+terminal-box: "terminal_box_*.png"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
+# Boot menu
++ boot_menu {
+  top = 48%+54
+  left = 5%
+  width = 27%
+  height = 80%
+  item_font = "Outer Wilds Menu Regular 36"
+  item_color = "#ed833f"
+  item_spacing = 18
+  item_height = 36
+  selected_item_color = "#fbddc5"
+  selected_item_font = "Outer Wilds Menu Selected Regular 36"
+}
+
+# Countdown message
++ label {
+  left = 50%
+  top = 7%
+  width = 40%
+  align = "center"
+  id = "__timeout__"
+  # DE
+  # text = "Supernova in %d Sekunden."
+  # EN
+  text = "Supernova in %d seconds"
+  # ES
+  # text = "Supernova en %d segundos"
+  # FR
+  # text = "Supernova dans %d secondes"
+  # HU
+  # text = "Szupernóva %d másodperc alatt"
+  # IT
+  # text = "Supernova in %d secondi"
+  # KO
+  # text = "%d 초 만에 초신성 폭발"
+  # LV
+  # text = "Supernova %d sekundēs"
+  # NO
+  # text = "Supernova på %d sekunder"
+  # PL
+  # text = "Supernowa w %d sekund"
+  # PT
+  # text = "Supernova em %d segundos"
+  # RU
+  # text = "Сверхновая за %d сек"
+  # RUE
+  # text = "Сверхновая за %d секунд"
+  # TR
+  # text = "%d saniyede süpernova"
+  # UA
+  # text = "Наднова за %d секунд."
+  # zh_CN
+  # text = "%d 秒内爆发超新星"
+  # zh_TW
+  # text = "%d 秒後的超新星"
+  color = "#73baba"
+  font = "Space Mono Regular 32"
+}
+
+# Navigation keys hint
++ label {
+  left = 0
+  top = 98%-30
+  width = 100%
+  align = "center"
+  # DE
+  # text = "System mit ↑ und ↓ auswählen und mit Enter bestätigen."
+  # EN
+  text = "Use ↑ and ↓ keys to change selection, Enter to confirm"
+  # ES
+  # text = "Use las teclas ↑ y ↓ para cambiar la selección, Enter para confirmar"
+  # FR
+  # text = "Choisissez le système avec les flèches du clavier (↑ et ↓), puis validez avec la touche Enter (↲)"
+  # HU
+  # text = "A kiemelt elem kijelöléséhez használja a(z) ↑ és ↓ billentyűket!"
+  # IT
+  # text = "Usa i tasti ↑ e ↓ per cambiare la selezione, premi Invio ↲ per confermare"
+  # KO
+  # text = "↑와 ↓ 키를 눌러 항목을 이동하며, Enter를 눌러 선택합니다."
+  # LV
+  # text = "Izmantojiet ↑ un ↓ bultiņas, lai mainītu izvēli, Enter ↲, lai apstiprinātu."
+  # NO
+  # text = "Bruk ↑ og ↓ for å endre menyvalg, velg med Enter"
+  # PL
+  # text = "Użyj klawiszy ↑ i ↓ aby wybrać, Enter aby zatwierdzić."
+  # PT
+  # text = "Use as teclas ↑ e ↓ para mudar a seleção, e ENTER para confirmar"
+  # RU
+  # text = "Используйте клавиши ↑ и ↓ для изменения выбора, Enter для подтверждения"
+  # RUE
+  # text = "Хоснуйте ↑ тай ↓ на убераня, Enter на пудтверженя"
+  # TR
+  # text = "Seçiminizi değiştirmek için ↑ ve ↓ tuşlarını, onaylamak için ise Enter tuşunu kullanabilirsiniz"
+  # UA
+  # text = "Використовуйте ↑ та ↓ для вибору, Enter для підтвердження"
+  # zh_CN
+  # text = "使用 ↑ 和 ↓ 键移动选择条，Enter 键确认"
+  # zh_TW
+  # text = "使用 ↑ 和 ↓ 鍵移動選擇，Enter 鍵繼續"
+  color = "#73baba"
+  font = "Space Mono Regular 12"
+}
