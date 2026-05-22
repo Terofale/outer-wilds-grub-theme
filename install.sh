@@ -73,6 +73,27 @@ if [[ "$INSTALLER_LANG" != "English" ]]; then
               -e '/^\s+# '"${INSTALLER_LANGS[$INSTALLER_LANG]}"'$/{n;s/^(\s*)#\s*/\1/}' theme.txt
 fi
 
+echo ''
+
+# Choose resolution preset
+PS3='Please select resolution #: '
+options=("1080p" "1440p")
+select opt in "${options[@]}"
+do
+    case $opt in 
+        "1080p")
+            FILES_FOLDER="theme-files-1080p"
+            break
+            ;;
+        "1440p")
+            FILES_FOLDER="theme-files-1440p"
+            break
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
+
+
 # Detect distro and set GRUB location and update method
 GRUB_DIR='grub'
 UPDATE_GRUB=''
@@ -118,7 +139,7 @@ sudo rm -rf  /boot/${GRUB_DIR}/themes/${GRUB_THEME}
 sudo mkdir -p /boot/${GRUB_DIR}/themes/${GRUB_THEME}
 
 echo 'Copying theme to GRUB themes directory'
-sudo cp -r theme-files/* /boot/${GRUB_DIR}/themes/${GRUB_THEME}
+sudo cp -r ./${FILES_FOLDER}/* /boot/${GRUB_DIR}/themes/${GRUB_THEME}
 
 echo 'Removing other themes from GRUB config'
 sudo sed -i '/^GRUB_THEME=/d' /etc/default/grub
